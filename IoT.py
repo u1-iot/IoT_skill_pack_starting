@@ -7,7 +7,7 @@ from time import sleep
 
 def main():
     dt_now = datetime.datetime.now()
-    print(dt_now.strftime('%Y/%m/%d %H:%M:%S') + "更新結果反映された？")
+    print(dt_now.strftime('%Y/%m/%d %H:%M:%S') + "10秒更新中...")
     print(os.environ.get('LANG'))
     #print(os.environ.get('RemoteENV'))
 
@@ -15,4 +15,4 @@ def main():
 if __name__ == '__main__':
     while True:
         main()
-        sleep(5)
+        sleep(10)
